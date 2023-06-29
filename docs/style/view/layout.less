@@ -1,0 +1,44 @@
+.layout {
+    padding-top: 72px;
+
+    >.topbar {
+        position: fixed;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        z-index : 999998;
+
+        >.logo {
+            >h1 {
+                display    : flex;
+                align-items: center;
+                gap        : 12px;
+                font-family: TrajanPro;
+                font-size  : 26px;
+                font-weight: bold;
+
+                @media @phone {
+                    font-size: 24px;
+                }
+
+                >span {
+                    padding-top: 7px;
+                }
+            }
+        }
+    }
+
+    >footer {
+        width  : 920px;
+        padding: 40px 20px;
+        margin : auto;
+
+        @media @tablet-and-phone {
+            width: 100%;
+        }
+
+        >a {
+            color: var(--link-text-color);
+        }
+    }
+}

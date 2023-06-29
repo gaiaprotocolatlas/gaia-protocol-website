@@ -1070,4 +1070,93 @@ a.tab.gaia-component.selected {
   display: flex;
   justify-content: flex-end;
 }
+:root {
+  --primary-color: 246, 189, 72;
+  --on-primary-color: 65, 45, 0;
+  --secondary-color: 178, 207, 167;
+  --on-secondary-color: 31, 54, 26;
+  --secondary-container-color: 53, 77, 47;
+  --on-secondary-container-color: 206, 235, 194;
+  --surface-color: 30, 27, 22;
+  --on-surface-color: 233, 225, 217;
+  --surface-conatiner-color: 78, 70, 57;
+  --on-surface-conatiner-color: 209, 197, 180;
+  --outline-color: 154, 143, 128;
+  --error-color: 147, 0, 10;
+  --on-error-color: 255, 218, 214;
+  --overlay-hover-color: 0, 0, 0, 0.2;
+}
+[data-theme="dark"] {
+  --primary-color: 246, 189, 72;
+  --on-primary-color: 65, 45, 0;
+  --secondary-color: 178, 207, 167;
+  --on-secondary-color: 31, 54, 26;
+  --secondary-container-color: 53, 77, 47;
+  --on-secondary-container-color: 206, 235, 194;
+  --surface-color: 30, 27, 22;
+  --on-surface-color: 233, 225, 217;
+  --surface-conatiner-color: 78, 70, 57;
+  --on-surface-conatiner-color: 209, 197, 180;
+  --outline-color: 154, 143, 128;
+  --error-color: 147, 0, 10;
+  --on-error-color: 255, 218, 214;
+  --overlay-hover-color: 0, 0, 0, 0.2;
+}
+@font-face {
+  font-family: TrajanPro;
+  src: url("/fonts/TrojanPro/TrajanPro-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: TrajanPro;
+  font-weight: bold;
+  src: url("/fonts/TrojanPro/TrajanPro-Bold.woff") format("woff");
+}
+.layout {
+  padding-top: 72px;
+}
+.layout > .topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999998;
+}
+.layout > .topbar > .logo > h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: TrajanPro;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 859px) {
+  .layout > .topbar > .logo > h1 {
+    font-size: 24px;
+  }
+}
+.layout > .topbar > .logo > h1 > span {
+  padding-top: 7px;
+}
+.layout > footer {
+  width: 920px;
+  padding: 40px 20px;
+  margin: auto;
+}
+@media only screen and (max-width: 959px) {
+  .layout > footer {
+    width: 100%;
+  }
+}
+.layout > footer > a {
+  color: var(--link-text-color);
+}
+.home-view > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 

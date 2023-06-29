@@ -6,8 +6,7 @@
     },
     "type": "module",
     "dependencies": {
-        "gaia-commons-nodejs": "^0.1.40",
-        "gaia-commons-ssg": "^0.0.1"
+        "gaia-commons-nodejs": "^0.1.40"
     },
     "devDependencies": {
         "nodemon": "^2.0.22",

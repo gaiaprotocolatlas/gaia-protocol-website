@@ -1,4 +1,5 @@
-export default function layout(title: string, content: string) {
+import { ResponsiveImage, TopBar, el } from "gaia-commons-nodejs";
+export default function layout(title, content) {
     return `<!DOCTYPE html>
 <html>
 
@@ -12,9 +13,19 @@ export default function layout(title: string, content: string) {
 </head>
 
 <body>
-    ${content}
+    <div class="layout">
+        ${TopBar({
+        logo: el("h1", ResponsiveImage("img", "/images/logo.png"), el("span", "Gaia Protocol")),
+        menu: [{
+                name: "Home",
+                uri: "/",
+            }],
+    })}
+        ${content}
+    </div>
     <script src="/bundle.js"></script>
 </body>
 
 </html>`.split("\n").map(line => line.trim()).join("");
 }
+//# sourceMappingURL=Layout.js.map

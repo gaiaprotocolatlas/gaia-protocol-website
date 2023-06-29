@@ -1,5 +1,6 @@
-import { ResponsiveImage, TopBar } from "gaia-commons-nodejs";
-export default function layout(title, content) {
+import { ResponsiveImage, TopBar, el } from "gaia-commons-nodejs";
+
+export default function layout(title: string, content: string) {
     return `<!DOCTYPE html>
 <html>
 
@@ -13,17 +14,21 @@ export default function layout(title, content) {
 </head>
 
 <body>
-    ${TopBar({
-        logo: ResponsiveImage("img", "/images/logo.png"),
-        menu: [{
+    <div class="layout">
+        ${TopBar({
+            logo: el("h1",
+                ResponsiveImage("img", "/images/logo.png"),
+                el("span", "Gaia Protocol"),
+            ),
+            menu: [{
                 name: "Home",
                 uri: "/",
             }],
-    })}
-    ${content}
+        })}
+        ${content}
+    </div>
     <script src="/bundle.js"></script>
 </body>
 
 </html>`.split("\n").map(line => line.trim()).join("");
 }
-//# sourceMappingURL=layout.js.map
