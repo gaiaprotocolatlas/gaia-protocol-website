@@ -1,0 +1,9 @@
+{
+    "type": "module",
+    "types": "./lib/index.d.ts",
+    "main": "./lib/index.js",
+    "dependencies": {
+        "gaia-commons-ssg": "^0.0.1"
+    },
+    "devDependencies": {}
+}
