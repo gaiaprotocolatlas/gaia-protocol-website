@@ -17,7 +17,7 @@ export default class Layout {
         <link rel="stylesheet" type="text/css" href="/bundle.css" />
     </head>
     
-    <body>
+    <body data-theme="dark">
         <div class="layout">
             ${new TopBar({
             logo: el("h1",

@@ -125,8 +125,8 @@ meter {
   --on-secondary-container-color: 206, 235, 194;
   --surface-color: 30, 27, 22;
   --on-surface-color: 233, 225, 217;
-  --surface-conatiner-color: 78, 70, 57;
-  --on-surface-conatiner-color: 209, 197, 180;
+  --surface-conatiner-color: 24, 24, 24;
+  --on-surface-conatiner-color: 255, 255, 255;
   --outline-color: 154, 143, 128;
   --error-color: 147, 0, 10;
   --on-error-color: 255, 218, 214;
@@ -225,7 +225,7 @@ meter {
   color: rgba(var(--primary-color));
 }
 .gaia-component.topbar {
-  height: 72px;
+  height: 80px;
   background-color: rgba(var(--surface-conatiner-color));
   color: rgba(var(--on-surface-conatiner-color));
   display: flex;
@@ -271,6 +271,10 @@ meter {
 }
 .gaia-component.topbar > .menu-panel > .menu-container > main > a {
   padding: 16px;
+  color: rgba(var(--on-surface-conatiner-color), 0.7);
+}
+.gaia-component.topbar > .menu-panel > .menu-container > main > a:hover {
+  color: rgba(var(--on-surface-conatiner-color));
 }
 .gaia-component.topbar > .menu-panel > .menu-container > footer {
   display: flex;
@@ -1070,38 +1074,6 @@ a.tab.gaia-component.selected {
   display: flex;
   justify-content: flex-end;
 }
-:root {
-  --primary-color: 246, 189, 72;
-  --on-primary-color: 65, 45, 0;
-  --secondary-color: 178, 207, 167;
-  --on-secondary-color: 31, 54, 26;
-  --secondary-container-color: 53, 77, 47;
-  --on-secondary-container-color: 206, 235, 194;
-  --surface-color: 30, 27, 22;
-  --on-surface-color: 233, 225, 217;
-  --surface-conatiner-color: 78, 70, 57;
-  --on-surface-conatiner-color: 209, 197, 180;
-  --outline-color: 154, 143, 128;
-  --error-color: 147, 0, 10;
-  --on-error-color: 255, 218, 214;
-  --overlay-hover-color: 0, 0, 0, 0.2;
-}
-[data-theme="dark"] {
-  --primary-color: 246, 189, 72;
-  --on-primary-color: 65, 45, 0;
-  --secondary-color: 178, 207, 167;
-  --on-secondary-color: 31, 54, 26;
-  --secondary-container-color: 53, 77, 47;
-  --on-secondary-container-color: 206, 235, 194;
-  --surface-color: 30, 27, 22;
-  --on-surface-color: 233, 225, 217;
-  --surface-conatiner-color: 78, 70, 57;
-  --on-surface-conatiner-color: 209, 197, 180;
-  --outline-color: 154, 143, 128;
-  --error-color: 147, 0, 10;
-  --on-error-color: 255, 218, 214;
-  --overlay-hover-color: 0, 0, 0, 0.2;
-}
 @font-face {
   font-family: TrajanPro;
   src: url("/fonts/TrojanPro/TrajanPro-Regular.woff") format("woff");
@@ -1112,7 +1084,7 @@ a.tab.gaia-component.selected {
   src: url("/fonts/TrojanPro/TrajanPro-Bold.woff") format("woff");
 }
 .layout {
-  padding-top: 72px;
+  padding-top: 80px;
 }
 .layout > .topbar {
   position: fixed;
@@ -1150,7 +1122,16 @@ a.tab.gaia-component.selected {
 .layout > footer > a {
   color: var(--link-text-color);
 }
-.home-view > video {
+.intro-view > header {
+  position: relative;
+  height: 690px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > header {
+    height: 224px;
+  }
+}
+.intro-view > header > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1158,5 +1139,44 @@ a.tab.gaia-component.selected {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.intro-view > header > main {
+  width: 896px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 27px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > header > main {
+    width: 100%;
+    padding: 0 27px;
+    padding-bottom: 15px;
+  }
+}
+.intro-view > header > main > h1 {
+  font-family: TrajanPro;
+  font-size: 43px;
+  font-weight: bold;
+  color: #f8f0eb;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > header > main > h1 {
+    font-size: 24px;
+  }
+}
+.intro-view > header > main > p {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > header > main > p {
+    font-size: 12px;
+  }
 }
 
