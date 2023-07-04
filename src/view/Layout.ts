@@ -1,5 +1,4 @@
-import { ResponsiveImage, TopBar, el } from "gaia-commons-nodejs";
-import DomNode from "gaia-commons-nodejs/lib/static-dom/DomNode.js";
+import { DomNode, ResponsiveImage, TopBar, el } from "gaia-commons-ts";
 
 export default class Layout {
     constructor(private title: string, private content: DomNode) { }

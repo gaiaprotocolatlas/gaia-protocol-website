@@ -1,4 +1,4 @@
-import { DomNode } from "gaia-commons-nodejs";
+import { DomNode } from "gaia-commons-ts";
 
 export default class Partnerships extends DomNode {
 

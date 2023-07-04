@@ -1,1 +1,1 @@
-{"version":3,"file":"News.js","sourceRoot":"","sources":["../../src/view/News.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,OAAO;IAErC,YAAY,IAAY;QACpB,KAAK,CAAC,YAAY,CAAC,CAAC;QACpB,IAAI,CAAC,MAAM,EACV,CAAC;IACN,CAAC;CACJ"}
+{"version":3,"file":"News.js","sourceRoot":"","sources":["../../src/view/News.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE1C,MAAM,CAAC,OAAO,OAAO,IAAK,SAAQ,OAAO;IAErC,YAAY,IAAY;QACpB,KAAK,CAAC,YAAY,CAAC,CAAC;QACpB,IAAI,CAAC,MAAM,EACV,CAAC;IACN,CAAC;CACJ"}

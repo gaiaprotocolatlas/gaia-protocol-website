@@ -1,4 +1,4 @@
-import { ResponsiveImage, TopBar, el } from "gaia-commons-nodejs";
+import { ResponsiveImage, TopBar, el } from "gaia-commons-ts";
 export default class Layout {
     title;
     content;

@@ -1,4 +1,4 @@
-import DomNode from "gaia-commons-nodejs/lib/static-dom/DomNode.js";
+import { DomNode } from "gaia-commons-ts";
 export default class Layout {
     private title;
     private content;

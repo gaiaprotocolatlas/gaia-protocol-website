@@ -1,4 +1,4 @@
-import { DomNode, el, msg } from "gaia-commons-nodejs";
+import { DomNode, el, msg } from "gaia-commons-ts";
 
 export default class Intro extends DomNode {
 

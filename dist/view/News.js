@@ -1,4 +1,4 @@
-import { DomNode } from "gaia-commons-nodejs";
+import { DomNode } from "gaia-commons-ts";
 export default class News extends DomNode {
     constructor(lang) {
         super(".news-view");
