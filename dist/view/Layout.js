@@ -24,8 +24,14 @@ export default class Layout {
             ${new TopBar({
             logo: el("h1", new ResponsiveImage("img", "/images/logo.png"), el("span", "Gaia Protocol")),
             menu: [{
-                    name: "Home",
-                    uri: "/",
+                    name: "News",
+                    uri: "/news",
+                }, {
+                    name: "Partnerships",
+                    uri: "/partnerships",
+                }, {
+                    name: "Stories",
+                    uri: "/stories",
                 }],
         }).build()}
             ${this.content.build()}

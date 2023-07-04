@@ -379,21 +379,21 @@ article.gaia-component > pre > code {
   color: rgba(var(--on-surface-conatiner-color));
 }
 .gaia-component.table > table {
-  border: rgba(var(--outline-border));
+  border: 1px solid rgba(var(--outline-color));
   font-size: 14px;
 }
 .gaia-component.table > table > thead > tr > th {
-  border-bottom: rgba(var(--outline-border));
+  border-bottom: 1px solid rgba(var(--outline-color));
   padding: 16px;
   font-weight: bold;
 }
 .gaia-component.table > table > tbody > tr > th {
-  border-bottom: rgba(var(--outline-border));
+  border-bottom: 1px solid rgba(var(--outline-color));
   padding: 16px;
   font-weight: bold;
 }
 .gaia-component.table > table > tbody > tr > td {
-  border-bottom: rgba(var(--outline-border));
+  border-bottom: 1px solid rgba(var(--outline-color));
   padding: 16px;
 }
 .page-footer.gaia-component {
@@ -416,7 +416,7 @@ article.gaia-component > pre > code {
   font-size: 11px;
   border-radius: 4px;
   padding: 4px 8px;
-  position: absolute;
+  position: fixed;
   left: -999999px;
   top: -999999px;
   white-space: nowrap;

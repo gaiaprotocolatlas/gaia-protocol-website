@@ -25,8 +25,14 @@ export default class Layout {
                 el("span", "Gaia Protocol"),
             ),
             menu: [{
-                name: "Home",
-                uri: "/",
+                name: "News",
+                uri: "/news",
+            }, {
+                name: "Partnerships",
+                uri: "/partnerships",
+            }, {
+                name: "Stories",
+                uri: "/stories",
             }],
         }).build()}
             ${this.content.build()}
