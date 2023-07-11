@@ -16,7 +16,7 @@
   \**************************/
 /***/ (() => {
 
-eval("\n\n\n//# sourceURL=webpack:///./src/js-module.ts?");
+eval("\nconst menuPanel = document.querySelector(\".topbar .menu-panel\");\nif (menuPanel) {\n    document.querySelector(\".topbar .menu-button\")?.addEventListener(\"click\", () => menuPanel.classList.add(\"active\"));\n    menuPanel.querySelector(\".close-menu-button\")?.addEventListener(\"click\", () => menuPanel.classList.remove(\"active\"));\n}\n\n\n//# sourceURL=webpack:///./src/js-module.ts?");
 
 /***/ })
 
