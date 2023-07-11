@@ -36,6 +36,7 @@ export default class Layout {
         }).build()}
             ${this.content.build()}
         </div>
+        <script src="https://kit.fontawesome.com/79ded072f6.js" crossorigin="anonymous"></script>
         <script src="/bundle.js"></script>
     </body>
     
