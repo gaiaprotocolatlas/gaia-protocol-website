@@ -6,9 +6,11 @@
     },
     "type": "module",
     "dependencies": {
-        "gaia-commons-nodejs": "^0.1.40"
+        "gaia-commons-nodejs": "^0.1.40",
+        "marked": "^5.1.0"
     },
     "devDependencies": {
+        "@types/marked": "^5.0.0",
         "nodemon": "^2.0.22",
         "assert": "^2.0.0",
         "buffer": "^6.0.3",

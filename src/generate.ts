@@ -11,12 +11,12 @@ export default async function generate() {
     msg.loadYAML("ko", await FileUtil.readText("locales/ko.yml"));
 
     await FileUtil.write("docs/index.html", new Layout("Gaia Protocol", new Intro("en")).build());
-    await FileUtil.write("docs/news.html", new Layout("News - Gaia Protocol", new News("en")).build());
+    await FileUtil.write("docs/news.html", new Layout("News - Gaia Protocol", await new News("en").loadNews()).build());
     await FileUtil.write("docs/partnerships.html", new Layout("Partnerships - Gaia Protocol", new Partnerships("en")).build());
-    await FileUtil.write("docs/stories.html", new Layout("Stories - Gaia Protocol", new Stories("en")).build());
+    await FileUtil.write("docs/stories.html", new Layout("Stories - Gaia Protocol", await new Stories("en").loadStory()).build());
 
     await FileUtil.write("docs/ko/index.html", new Layout("Gaia Protocol", new Intro("ko")).build());
-    await FileUtil.write("docs/ko/news.html", new Layout("뉴스 - Gaia Protocol", new News("ko")).build());
+    await FileUtil.write("docs/ko/news.html", new Layout("뉴스 - Gaia Protocol", await new News("ko").loadNews()).build());
     await FileUtil.write("docs/ko/partnerships.html", new Layout("파트너십 - Gaia Protocol", new Partnerships("ko")).build());
-    await FileUtil.write("docs/ko/stories.html", new Layout("스토리 - Gaia Protocol", new Stories("ko")).build());
+    await FileUtil.write("docs/ko/stories.html", new Layout("스토리 - Gaia Protocol", await new Stories("ko").loadStory()).build());
 }

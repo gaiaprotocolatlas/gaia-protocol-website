@@ -1,1 +1,1 @@
-{"version":3,"file":"Partnerships.d.ts","sourceRoot":"","sources":["../../src/view/Partnerships.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE1C,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,OAAO;gBAEjC,IAAI,EAAE,MAAM;CAK3B"}
+{"version":3,"file":"Partnerships.d.ts","sourceRoot":"","sources":["../../src/view/Partnerships.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAM,MAAM,iBAAiB,CAAC;AAE9C,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,OAAO;gBAEjC,IAAI,EAAE,MAAM;CAM3B"}
