@@ -19,10 +19,11 @@ export default class Layout {
         <link rel="stylesheet" type="text/css" href="/bundle.css" />
     </head>
     
-    <body data-theme="dark">
+    <body>
         <div class="layout">
             ${new TopBar({
             logo: el("h1", new ResponsiveImage("img", "/images/logo.png"), el("span", "Gaia Protocol")),
+            darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logo-dark-mode.png"), el("span", "Gaia Protocol")),
             menu: [{
                     name: "News",
                     uri: "/news",

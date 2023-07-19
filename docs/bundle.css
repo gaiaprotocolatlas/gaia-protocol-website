@@ -1093,7 +1093,8 @@ a.tab.gaia-component.selected {
   width: 100%;
   z-index: 999998;
 }
-.layout > .topbar > .logo > h1 {
+.layout > .topbar > .logo > h1,
+.layout > .topbar > .dark-mode-logo > h1 {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1102,12 +1103,17 @@ a.tab.gaia-component.selected {
   font-weight: bold;
 }
 @media only screen and (max-width: 859px) {
-  .layout > .topbar > .logo > h1 {
+  .layout > .topbar > .logo > h1,
+  .layout > .topbar > .dark-mode-logo > h1 {
     font-size: 24px;
   }
 }
-.layout > .topbar > .logo > h1 > span {
+.layout > .topbar > .logo > h1 > span,
+.layout > .topbar > .dark-mode-logo > h1 > span {
   padding-top: 7px;
+}
+.layout > .topbar > .dark-mode-logo {
+  display: none;
 }
 .layout > footer {
   width: 920px;
@@ -1121,6 +1127,12 @@ a.tab.gaia-component.selected {
 }
 .layout > footer > a {
   color: var(--link-text-color);
+}
+[data-theme="dark"] .layout > .topbar > .logo {
+  display: none;
+}
+[data-theme="dark"] .layout > .topbar > .dark-mode-logo {
+  display: block;
 }
 .intro-view > header {
   position: relative;
@@ -1147,7 +1159,7 @@ a.tab.gaia-component.selected {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 27px;
+  padding-bottom: 40px;
 }
 @media only screen and (max-width: 859px) {
   .intro-view > header > main {
@@ -1178,5 +1190,52 @@ a.tab.gaia-component.selected {
   .intro-view > header > main > p {
     font-size: 12px;
   }
+}
+.intro-view > section {
+  border-bottom: 1px solid rgba(var(--outline-color));
+}
+.intro-view > section > main {
+  width: 896px;
+  padding: 80px 0;
+  margin: auto;
+}
+@media only screen and (max-width: 959px) {
+  .intro-view > section > main {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+.intro-view > section > main > h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.intro-view > section > main > p {
+  margin-top: 8px;
+}
+.intro-view > section > main > .cards {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > section > main > .cards {
+    display: block;
+  }
+}
+.intro-view > section > main > .cards > .card > h3 {
+  font-size: 20px;
+}
+.intro-view > section > main > .cards > .card > p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.intro-view > section > main > .cards > .card > a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: rgba(var(--primary-color));
 }
 

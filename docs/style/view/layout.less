@@ -8,7 +8,8 @@
         width   : 100%;
         z-index : 999998;
 
-        >.logo {
+        >.logo,
+        >.dark-mode-logo {
             >h1 {
                 display    : flex;
                 align-items: center;
@@ -26,6 +27,10 @@
                 }
             }
         }
+
+        >.dark-mode-logo {
+            display: none;
+        }
     }
 
     >footer {
@@ -39,6 +44,20 @@
 
         >a {
             color: var(--link-text-color);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .layout {
+        >.topbar {
+            >.logo {
+                display: none;
+            }
+
+            >.dark-mode-logo {
+                display: block;
+            }
         }
     }
 }

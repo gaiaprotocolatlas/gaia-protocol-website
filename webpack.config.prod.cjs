@@ -60,7 +60,8 @@ module.exports = {
             assert: require.resolve("assert/"),
             crypto: require.resolve("crypto-browserify"),
             util: require.resolve("util/"),
-            buffer: require.resolve("buffer/")
+            buffer: require.resolve("buffer/"),
+            'process/browser': require.resolve('process/browser')
         },
     },
     output: {
