@@ -1223,14 +1223,23 @@ a.tab.gaia-component.selected {
     display: block;
   }
 }
-.intro-view > section > main > .cards > .card > h3 {
+.intro-view > section > main > .cards > .card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.intro-view > section > main > .cards > .card > img {
+  width: 128px;
+  border-radius: 4px;
+}
+.intro-view > section > main > .cards > .card > main > h3 {
   font-size: 20px;
 }
-.intro-view > section > main > .cards > .card > p {
+.intro-view > section > main > .cards > .card > main > p {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.intro-view > section > main > .cards > .card > a {
+.intro-view > section > main > .cards > .card > main > a {
   font-weight: bold;
   display: flex;
   align-items: center;

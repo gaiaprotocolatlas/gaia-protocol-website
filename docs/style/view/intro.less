@@ -90,22 +90,33 @@
                 }
 
                 >.card {
-                    >h3 {
-                        font-size: 20px;
+                    display    : flex;
+                    align-items: center;
+                    gap        : 16px;
+
+                    >img {
+                        width        : 128px;
+                        border-radius: 4px;
                     }
 
-                    >p {
-                        margin-top   : 8px;
-                        margin-bottom: 8px;
-                    }
+                    >main {
+                        >h3 {
+                            font-size: 20px;
+                        }
 
-                    >a {
-                        font-weight: bold;
-                        display    : flex;
-                        align-items: center;
-                        gap        : 8px;
-                        cursor     : pointer;
-                        color      : rgba(var(--primary-color));
+                        >p {
+                            margin-top   : 8px;
+                            margin-bottom: 8px;
+                        }
+
+                        >a {
+                            font-weight: bold;
+                            display    : flex;
+                            align-items: center;
+                            gap        : 8px;
+                            cursor     : pointer;
+                            color      : rgba(var(--primary-color));
+                        }
                     }
                 }
             }
