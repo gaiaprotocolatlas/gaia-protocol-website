@@ -26,7 +26,7 @@ export default class Layout {
             ${new TopBar({
             logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
             darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"), el("span", "Gaia Protocol")),
-            menu: [{
+            menu: this.lang === "en" ? [{
                     name: "News",
                     uri: "/news",
                 }, {
@@ -35,6 +35,15 @@ export default class Layout {
                 }, {
                     name: "Story",
                     uri: "/story",
+                }] : [{
+                    name: "뉴스",
+                    uri: "/ko/news",
+                }, {
+                    name: "파트너십",
+                    uri: "/ko/partnerships",
+                }, {
+                    name: "스토리",
+                    uri: "/ko/story",
                 }],
         }, this.lang === "en" ? el("a.select-lang-button", el("i.fa-solid.fa-globe"), " KO", {
             href: "/ko",
