@@ -23,10 +23,10 @@ export default class Intro extends DomNode {
         }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia CMP"), el("p", msg("intro-view-gaia-cmp-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://cmp.gaia.cc",
             target: "_blank",
-        })))))), el("section.services", el("main", el("h2", msg("intro-view-service-title", lang)), el("p", msg("intro-view-service-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia DEX"), el("p", msg("intro-view-gaia-dex-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        })))))), el("section.services", el("main", el("h2", msg("intro-view-service-title", lang)), el("p", msg("intro-view-service-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gaia-dex-logo.jpg" }), el("main", el("h3", "Gaia DEX"), el("p", msg("intro-view-gaia-dex-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://gaiadex.com",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia Asset Bridge"), el("p", msg("intro-view-gaia-asset-bridge-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/gaia-bridge-logo.jpg" }), el("main", el("h3", "Gaia Asset Bridge"), el("p", msg("intro-view-gaia-asset-bridge-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://gaiabridge.com",
             target: "_blank",
         }))), new Card({}, el("img", { src: "/images/logos/hermes-logo.jpg" }), el("main", el("h3", "Hermes"), el("p", msg("intro-view-hermes-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
