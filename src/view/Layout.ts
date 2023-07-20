@@ -1,7 +1,7 @@
 import { DomNode, Footer, ResponsiveImage, TopBar, el } from "gaia-commons-ts";
 
 export default class Layout {
-    constructor(private title: string, private content: DomNode) { }
+    constructor(private title: string, private content: DomNode, private lang: string) { }
 
     public build() {
         return `<!DOCTYPE html>
@@ -37,7 +37,19 @@ export default class Layout {
                 name: "Stories",
                 uri: "/stories",
             }],
-        }).build()}
+        }, this.lang === "en" ? el("a.select-lang-button",
+            el("i.fa-solid.fa-globe"),
+            " KO",
+            {
+                href: "/ko",
+            },
+        ) : el("a.select-lang-button",
+            el("i.fa-solid.fa-globe"),
+            " EN",
+            {
+                href: "/",
+            },
+        )).build()}
             ${this.content.build()}
             ${new Footer({
             logo: el("h1",

@@ -31,6 +31,30 @@
         >.dark-mode-logo {
             display: none;
         }
+
+        >.menu-panel>.menu-container {
+            >footer {
+                display    : flex;
+                align-items: center;
+                gap        : 32px;
+
+                >a {
+                    color: rgba(var(--on-surface-conatiner-color), 0.7);
+
+                    &:hover {
+                        color: rgba(var(--on-surface-conatiner-color));
+                    }
+                }
+
+                @media @phone {
+                    flex-direction : row;
+                    justify-content: space-between;
+                    border-top     : 1px solid rgba(var(--outline-color));
+                    padding-top    : 32px;
+                    font-size      : 14px;
+                }
+            }
+        }
     }
 
     >footer {

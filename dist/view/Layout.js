@@ -2,9 +2,11 @@ import { Footer, ResponsiveImage, TopBar, el } from "gaia-commons-ts";
 export default class Layout {
     title;
     content;
-    constructor(title, content) {
+    lang;
+    constructor(title, content, lang) {
         this.title = title;
         this.content = content;
+        this.lang = lang;
     }
     build() {
         return `<!DOCTYPE html>
@@ -34,7 +36,11 @@ export default class Layout {
                     name: "Stories",
                     uri: "/stories",
                 }],
-        }).build()}
+        }, this.lang === "en" ? el("a.select-lang-button", el("i.fa-solid.fa-globe"), " KO", {
+            href: "/ko",
+        }) : el("a.select-lang-button", el("i.fa-solid.fa-globe"), " EN", {
+            href: "/",
+        })).build()}
             ${this.content.build()}
             ${new Footer({
             logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
