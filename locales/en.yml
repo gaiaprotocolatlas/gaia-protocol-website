@@ -1,7 +1,32 @@
-learn-more-button: Learn more
-intro-view-welcome-title: Welcome to Gaia Protocol.
-intro-view-intro: At Gaia Protocol, we simplify AI, Web3, and Blockchain technologies to connect people to the digital realm, offering accessible solutions and opportunities for the future. Join us in building the future.
+learn-more-button: Learn More
+google-play-button: Google Play
+app-store-button: App Store
+intro-view-welcome-title: Welcome to Gaia Protocol
+intro-view-intro: Gaia Protocol simplifies AI, Web3, and blockchain technology to connect people in the digital realm, creating accessible solutions that offer opportunities for the future. Join us in shaping the future.
 intro-view-assets-title: Assets
-intro-view-assets-description: There are various assets in Gaia Protocol. Explore Gaia Protocol's ecosystem through assets.
-intro-view-gaiatoken-description: GaiaToken is a smart contract token developed by the Gaia Protocol, aiming to ensure the value stability of NFTs (Non-Fungible Tokens) and prevent inflation.
-intro-view-gaia-protocol-gods-description: Gaia Protocol Gods is Gaia Protocol's highest-rated membership NFT, which includes all benefits and is the most valuable asset in the ecosystem.
+intro-view-assets-description: There are various assets within Gaia Protocol. Explore the Gaia Protocol ecosystem through these assets.
+intro-view-gaiatoken-description: GaiaToken is the smart contract token of Gaia Protocol, serving to stabilize the value of NFTs and prevent inflation.
+intro-view-gaia-protocol-gods-description: Gaia Protocol Gods are the highest tier membership NFTs within the Gaia Protocol, containing all benefits and being the most valuable assets in the ecosystem.
+intro-view-tech-title: Technology
+intro-view-tech-description: Gaia Protocol is developing a range of technologies with a focus on security, user convenience, and scalability.
+intro-view-gaia-accounts-description: Gaia Accounts are an integrated account system for all services seeking to connect Web2 and Web3.
+intro-view-trinity-description: Trinity is the core technology of Gaia Protocol, combining three trusted cloud systems like AWS, Azure, GCP to ensure data safety and reliability.
+intro-view-gaia-chain-description: Gaia Chain is a newly developed blockchain based on Trinity by Gaia Protocol, designed to eliminate gas fees and to not require the base coin within the chain for mass adoption.
+intro-view-gaia-chat-bridge-description: Gaia Chat Bridge is a foundational technology that enables communication across various platforms.
+intro-view-gaia-cmp-description: Gaia CMP (Community Management Platform) is a tool for managing communities efficiently.
+intro-view-service-title: Services
+intro-view-service-description: Gaia Protocol provides various services based on its technology.
+intro-view-gaia-dex-description: Gaia DEX is a decentralized exchange that enables transactions of various digital assets including Gaia Tokens.
+intro-view-gaia-asset-bridge-description: Gaia Asset Bridge is a service that allows digital assets to be transferred to other blockchains.
+intro-view-hermes-description: Hermes is an AI-based bot service from Gaia Protocol installed in the community. It helps resolve questions and issues, and assists in the management of digital assets.
+intro-view-smarty-description: Smarty is an AI-based application assistant service from Gaia Protocol. It helps resolve various questions and issues.
+intro-view-limbo-description: Limbo is a metaverse service of Gaia Protocol. It allows for various experiences in the virtual world.
+intro-view-contents-title: Contents
+intro-view-contents-description: Gaia Protocol provides rich content based on its technology.
+intro-view-gaia-war-description: Gaia War is a text-based war content provided by Gaia Protocol, where you can enjoy content using NFTs and other digital assets on various platforms.
+intro-view-the-koreans-1945-description: The Koreans 1945 is a secondary creation project of CryptoPunks with CryptoPunks holders, depicting iconic features of Korean culture.
+intro-view-bohosin-description: Bohosin is an art NFT that depicts six guardian deities that protect the treasures of South Korea.
+intro-view-family-project-title: Family Projects
+intro-view-family-project-description: Gaia Protocol is expanding the Gaia ecosystem through various family projects.
+intro-view-shigor-description: Shigor is a project that implements the countryside in the metaverse, providing a service that becomes a refuge in the busy modern society.
+intro-view-king-crown-dao-description: King Crown DAO is a DAO project that provides features that allow participants to directly manage the community and make decisions through NFTs.

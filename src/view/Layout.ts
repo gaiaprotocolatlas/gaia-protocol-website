@@ -20,11 +20,11 @@ export default class Layout {
         <div class="layout">
             ${new TopBar({
             logo: el("h1",
-                new ResponsiveImage("img", "/images/logo.png"),
+                new ResponsiveImage("img", "/images/logos/logo.png"),
                 el("span", "Gaia Protocol"),
             ),
             darkModeLogo: el("h1",
-                new ResponsiveImage("img", "/images/logo-dark-mode.png"),
+                new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"),
                 el("span", "Gaia Protocol"),
             ),
             menu: [{

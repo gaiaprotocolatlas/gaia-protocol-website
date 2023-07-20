@@ -1153,7 +1153,7 @@ a.tab.gaia-component.selected {
   z-index: -1;
 }
 .intro-view > header > main {
-  width: 896px;
+  width: 920px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -1195,7 +1195,7 @@ a.tab.gaia-component.selected {
   border-bottom: 1px solid rgba(var(--outline-color));
 }
 .intro-view > section > main {
-  width: 896px;
+  width: 920px;
   padding: 80px 0;
   margin: auto;
 }
@@ -1220,7 +1220,8 @@ a.tab.gaia-component.selected {
 }
 @media only screen and (max-width: 859px) {
   .intro-view > section > main > .cards {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 .intro-view > section > main > .cards > .card {
@@ -1229,17 +1230,20 @@ a.tab.gaia-component.selected {
   gap: 16px;
 }
 .intro-view > section > main > .cards > .card > img {
-  width: 128px;
+  width: 140px;
   border-radius: 4px;
 }
 .intro-view > section > main > .cards > .card > main > h3 {
   font-size: 20px;
+  font-weight: bold;
 }
 .intro-view > section > main > .cards > .card > main > p {
   margin-top: 8px;
   margin-bottom: 8px;
+  font-size: 14px;
 }
 .intro-view > section > main > .cards > .card > main > a {
+  font-size: 14px;
   font-weight: bold;
   display: flex;
   align-items: center;
