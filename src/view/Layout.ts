@@ -27,6 +27,7 @@ export default class Layout {
                 new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"),
                 el("span", "Gaia Protocol"),
             ),
+            href: this.lang === "en" ? "/" : "/ko",
             menu: this.lang === "en" ? [{
                 name: "News",
                 uri: "/news",
@@ -75,6 +76,7 @@ export default class Layout {
                 new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"),
                 el("span", "Gaia Protocol"),
             ),
+            href: this.lang === "en" ? "/" : "/ko",
             social: {
                 twitter: "https://twitter.com/Gaia_Protocol",
                 discord: "https://discord.gg/gaiaprotocol",

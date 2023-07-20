@@ -32,13 +32,19 @@ export default class Intro extends DomNode {
         }))), new Card({}, el("img", { src: "/images/logos/hermes-logo.jpg" }), el("main", el("h3", "Hermes"), el("p", msg("intro-view-hermes-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://hermes.gaia.cc",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/smarty-logo.jpg" }), el("main", el("h3", "Smarty"), el("p", msg("intro-view-smarty-description", lang)), el("a", msg("google-play-button", lang), el("i.fa-solid.fa-chevron-right"), {
-            href: "https://play.google.com/store/apps/details?id=com.gaiaprotocol.ttogttogi&hl=en_US",
-            target: "_blank",
-        }), el("a", msg("app-store-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/smarty-logo.jpg" }), el("main", el("h3", lang === "en" ? "Smarty" : "똑똑이"), el("p", msg("intro-view-smarty-description", lang)), lang === "en" ? el(".app-links", el("a", msg("app-store-button", lang), el("i.fa-brands.fa-app-store-ios"), {
             href: "https://apps.apple.com/us/app/smarty-smart-ai-chatbot/id6446423783",
             target: "_blank",
-        })))))), el("section.contents", el("main", el("h2", msg("intro-view-contents-title", lang)), el("p", msg("intro-view-contents-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gaiawar-logo.jpg" }), el("main", el("h3", "Gaia War"), el("p", msg("intro-view-gaia-war-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }), el("a", msg("google-play-button", lang), el("i.fa-brands.fa-google-play"), {
+            href: "https://play.google.com/store/apps/details?id=com.gaiaprotocol.ttogttogi&hl=en_US",
+            target: "_blank",
+        })) : el(".app-links", el("a", msg("google-play-button", lang), el("i.fa-brands.fa-google-play"), {
+            href: "https://play.google.com/store/apps/details?id=com.gaiaprotocol.ttogttogi&hl=ko_KR",
+            target: "_blank",
+        }), el("a", msg("app-store-button", lang), el("i.fa-brands.fa-app-store-ios"), {
+            href: "https://apps.apple.com/kr/app/smarty-smart-ai-chatbot/id6446423783",
+            target: "_blank",
+        }))))))), el("section.contents", el("main", el("h2", msg("intro-view-contents-title", lang)), el("p", msg("intro-view-contents-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gaiawar-logo.jpg" }), el("main", el("h3", "Gaia War"), el("p", msg("intro-view-gaia-war-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://gaiawar.com",
             target: "_blank",
         }))), new Card({}, el("img", { src: "/images/logos/the-koreans-1945-logo.jpg" }), el("main", el("h3", "The Koreans 1945"), el("p", msg("intro-view-the-koreans-1945-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {

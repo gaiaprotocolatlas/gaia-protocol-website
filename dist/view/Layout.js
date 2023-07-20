@@ -26,6 +26,7 @@ export default class Layout {
             ${new TopBar({
             logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
             darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"), el("span", "Gaia Protocol")),
+            href: this.lang === "en" ? "/" : "/ko",
             menu: this.lang === "en" ? [{
                     name: "News",
                     uri: "/news",
@@ -60,6 +61,7 @@ export default class Layout {
             ${new Footer({
             logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
             darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"), el("span", "Gaia Protocol")),
+            href: this.lang === "en" ? "/" : "/ko",
             social: {
                 twitter: "https://twitter.com/Gaia_Protocol",
                 discord: "https://discord.gg/gaiaprotocol",

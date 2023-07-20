@@ -2477,6 +2477,19 @@ a.tab.gaia-component.selected {
   cursor: pointer;
   color: rgba(var(--primary-color));
 }
+.intro-view > section > main > .cards > .card > main > .app-links {
+  display: flex;
+  justify-content: space-between;
+}
+.intro-view > section > main > .cards > .card > main > .app-links > a {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: rgba(var(--primary-color));
+}
 .news-view {
   width: 920px;
   padding: 80px 0;
