@@ -1128,10 +1128,38 @@ a.tab.gaia-component.selected {
 .layout > footer > a {
   color: var(--link-text-color);
 }
+.layout > footer > .logo > h1,
+.layout > footer > .dark-mode-logo > h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: TrajanPro;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 859px) {
+  .layout > footer > .logo > h1,
+  .layout > footer > .dark-mode-logo > h1 {
+    font-size: 24px;
+  }
+}
+.layout > footer > .logo > h1 > span,
+.layout > footer > .dark-mode-logo > h1 > span {
+  padding-top: 7px;
+}
+.layout > footer > .dark-mode-logo {
+  display: none;
+}
 [data-theme="dark"] .layout > .topbar > .logo {
   display: none;
 }
 [data-theme="dark"] .layout > .topbar > .dark-mode-logo {
+  display: block;
+}
+[data-theme="dark"] .layout > footer > .logo {
+  display: none;
+}
+[data-theme="dark"] .layout > footer > .dark-mode-logo {
   display: block;
 }
 .intro-view > header {

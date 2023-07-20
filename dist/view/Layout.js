@@ -1,4 +1,4 @@
-import { ResponsiveImage, TopBar, el } from "gaia-commons-ts";
+import { Footer, ResponsiveImage, TopBar, el } from "gaia-commons-ts";
 export default class Layout {
     title;
     content;
@@ -36,6 +36,10 @@ export default class Layout {
                 }],
         }).build()}
             ${this.content.build()}
+            ${new Footer({
+            logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
+            darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"), el("span", "Gaia Protocol")),
+        }).build()}
         </div>
         <script src="https://kit.fontawesome.com/79ded072f6.js" crossorigin="anonymous"></script>
         <script src="/bundle.js"></script>

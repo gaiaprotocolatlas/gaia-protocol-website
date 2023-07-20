@@ -45,12 +45,46 @@
         >a {
             color: var(--link-text-color);
         }
+
+        >.logo,
+        >.dark-mode-logo {
+            >h1 {
+                display    : flex;
+                align-items: center;
+                gap        : 12px;
+                font-family: TrajanPro;
+                font-size  : 26px;
+                font-weight: bold;
+
+                @media @phone {
+                    font-size: 24px;
+                }
+
+                >span {
+                    padding-top: 7px;
+                }
+            }
+        }
+
+        >.dark-mode-logo {
+            display: none;
+        }
     }
 }
 
 [data-theme="dark"] {
     .layout {
         >.topbar {
+            >.logo {
+                display: none;
+            }
+
+            >.dark-mode-logo {
+                display: block;
+            }
+        }
+
+        >footer {
             >.logo {
                 display: none;
             }
