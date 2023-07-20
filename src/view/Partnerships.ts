@@ -11,6 +11,10 @@ export default class Partnerships extends DomNode {
         logo: string;
         link: string;
     }[] = [{
+        name: "Bifrost Network",
+        logo: "/images/partnership-banners/bifrost.jpg",
+        link: "https://www.bifrostnetwork.com/",
+    }, {
         name: "THE BALANCE",
         logo: "/images/partnership-banners/the-balance.jpg",
         link: "https://4thebalance.com/",

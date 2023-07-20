@@ -4,6 +4,10 @@ import { Card, DomNode, el } from "gaia-commons-ts";
 dayjs.extend(relativeTime);
 export default class Partnerships extends DomNode {
     partners = [{
+            name: "Bifrost Network",
+            logo: "/images/partnership-banners/bifrost.jpg",
+            link: "https://www.bifrostnetwork.com/",
+        }, {
             name: "THE BALANCE",
             logo: "/images/partnership-banners/the-balance.jpg",
             link: "https://4thebalance.com/",
