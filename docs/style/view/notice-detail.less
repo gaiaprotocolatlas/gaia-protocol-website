@@ -1,0 +1,32 @@
+.notice-detail-view {
+    width  : 920px;
+    padding: 80px 0;
+    margin : auto;
+
+    @media @tablet-and-phone {
+        width  : 100%;
+        padding: 40px 20px;
+    }
+
+    >h1 {
+        font-family: TrajanPro;
+        font-size  : 30px;
+        font-weight: bold;
+        text-align : center;
+
+        @media @phone {
+            font-size: 24px;
+        }
+    }
+
+    >.time {
+        margin-top : 40px;
+        color      : rgba(var(--on-surface-conatiner-color));
+        font-weight: bold;
+        text-align : right;
+    }
+
+    >p {
+        margin-top: 12px;
+    }
+}

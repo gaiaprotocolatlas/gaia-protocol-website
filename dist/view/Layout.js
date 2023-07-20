@@ -33,8 +33,8 @@ export default class Layout {
                     name: "Partnerships",
                     uri: "/partnerships",
                 }, {
-                    name: "Stories",
-                    uri: "/stories",
+                    name: "Story",
+                    uri: "/story",
                 }],
         }, this.lang === "en" ? el("a.select-lang-button", el("i.fa-solid.fa-globe"), " KO", {
             href: "/ko",

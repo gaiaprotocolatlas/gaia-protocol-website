@@ -1,22 +1,17 @@
-import { DomNode, el } from "gaia-commons-ts";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime.js";
+import { Card, DomNode, el } from "gaia-commons-ts";
+dayjs.extend(relativeTime);
 export default class News extends DomNode {
     lang;
-    constructor(lang) {
+    noticeList;
+    constructor(notices, lang) {
         super(".news-view");
         this.lang = lang;
-        this.append();
-    }
-    async loadNews() {
-        const response = await fetch("https://cmp-server.gaia.cc/notice/list?community=64808a252adf744e396c271c");
-        if (response.ok) {
-            const notices = (await response.json()).notices;
-            for (const notice of notices) {
-                if (notice.language === this.lang) {
-                    this.append(el("div", el("h2", notice.title), el("p", notice.content)));
-                }
-            }
+        this.append(el("h1", "Gaia Protocol News"), this.noticeList = el(".notice-list"));
+        for (const notice of notices) {
+            this.noticeList.append(new Card({}, el("a", el("img", { src: "/images/news.jpg" }), el("main", el(".time", dayjs(notice.createTime).fromNow()), el("h2", notice.title)), { href: `/notice/${notice.id}` })));
         }
-        return this;
     }
 }
 //# sourceMappingURL=News.js.map
