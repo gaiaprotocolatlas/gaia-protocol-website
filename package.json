@@ -8,7 +8,7 @@
     "dependencies": {
         "dayjs": "^1.11.7",
         "gaia-commons-browser": "^0.0.2",
-        "gaia-commons-nodejs": "^0.1.40",
+        "gaia-commons-nodejs": "^0.1.57",
         "marked": "^5.1.0"
     },
     "devDependencies": {

@@ -1494,9 +1494,52 @@ article.gaia-component > pre > code {
   border-bottom: 1px solid rgba(var(--outline-color));
   padding: 16px;
 }
-.page-footer.gaia-component {
+footer.gaia-component {
   border-top: 1px solid rgba(var(--outline-color), 0.2);
   padding: 40px 0;
+}
+footer.gaia-component > .contact {
+  display: flex;
+}
+footer.gaia-component > .contact > a {
+  flex-grow: 1;
+}
+footer.gaia-component > .contact > .social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media only screen and (max-width: 859px) {
+  footer.gaia-component > .contact > .social {
+    gap: 8px;
+  }
+}
+footer.gaia-component > .contact > .social > a {
+  font-size: 32px;
+}
+@media only screen and (max-width: 859px) {
+  footer.gaia-component > .contact > .social > a {
+    font-size: 16px;
+  }
+}
+footer.gaia-component > .contact > .social > a > img {
+  height: 40px;
+  display: block;
+  filter: brightness(0%);
+}
+@media only screen and (max-width: 859px) {
+  footer.gaia-component > .contact > .social > a > img {
+    height: 20px;
+  }
+}
+footer.gaia-component > .bottom {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+footer.gaia-component > .bottom > .copy-right {
+  flex-grow: 1;
 }
 .gaia-component.beta-tag {
   font-size: 12px;
@@ -2172,6 +2215,9 @@ a.tab.gaia-component.selected {
   display: flex;
   justify-content: flex-end;
 }
+[data-theme="dark"] footer.gaia-component > .contact > .social > a > img {
+  filter: grayscale(100%);
+}
 @font-face {
   font-family: TrajanPro;
   src: url("/fonts/TrojanPro/TrajanPro-Regular.woff") format("woff");
@@ -2235,19 +2281,19 @@ a.tab.gaia-component.selected {
 }
 .layout > footer {
   width: 920px;
-  padding: 40px 20px;
   margin: auto;
 }
 @media only screen and (max-width: 959px) {
   .layout > footer {
     width: 100%;
+    padding: 40px 20px;
   }
 }
-.layout > footer > a {
+.layout > footer > .contact > a {
   color: var(--link-text-color);
 }
-.layout > footer > .logo > h1,
-.layout > footer > .dark-mode-logo > h1 {
+.layout > footer > .contact > .logo > h1,
+.layout > footer > .contact > .dark-mode-logo > h1 {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2256,16 +2302,16 @@ a.tab.gaia-component.selected {
   font-weight: bold;
 }
 @media only screen and (max-width: 859px) {
-  .layout > footer > .logo > h1,
-  .layout > footer > .dark-mode-logo > h1 {
+  .layout > footer > .contact > .logo > h1,
+  .layout > footer > .contact > .dark-mode-logo > h1 {
     font-size: 24px;
   }
 }
-.layout > footer > .logo > h1 > span,
-.layout > footer > .dark-mode-logo > h1 > span {
+.layout > footer > .contact > .logo > h1 > span,
+.layout > footer > .contact > .dark-mode-logo > h1 > span {
   padding-top: 7px;
 }
-.layout > footer > .dark-mode-logo {
+.layout > footer > .contact > .dark-mode-logo {
   display: none;
 }
 [data-theme="dark"] .layout > .topbar > .logo {
@@ -2274,10 +2320,10 @@ a.tab.gaia-component.selected {
 [data-theme="dark"] .layout > .topbar > .dark-mode-logo {
   display: block;
 }
-[data-theme="dark"] .layout > footer > .logo {
+[data-theme="dark"] .layout > footer > .contact > .logo {
   display: none;
 }
-[data-theme="dark"] .layout > footer > .dark-mode-logo {
+[data-theme="dark"] .layout > footer > .contact > .dark-mode-logo {
   display: block;
 }
 .intro-view > header {

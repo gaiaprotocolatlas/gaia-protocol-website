@@ -54,6 +54,17 @@ export default class Layout {
             ${new Footer({
             logo: el("h1", new ResponsiveImage("img", "/images/logos/logo.png"), el("span", "Gaia Protocol")),
             darkModeLogo: el("h1", new ResponsiveImage("img", "/images/logos/logo-dark-mode.png"), el("span", "Gaia Protocol")),
+            social: {
+                twitter: "https://twitter.com/Gaia_Protocol",
+                discord: "https://discord.gg/gaiaprotocol",
+                telegram: this.lang === "en" ? "https://t.me/gaiaprotocol" : "https://t.me/gaiaprotocol_kr",
+                github: "https://github.com/gaiaprotocol",
+                youtube: "https://youtube.com/gaiaprotocol",
+                kakaotalk: this.lang === "ko" ? "https://open.kakao.com/o/gE5KSgAe" : undefined,
+            },
+            copyRight: "© 2022 - 2023 Gaia Protocol",
+            privacyPolicy: "https://resources.gaia.cc/html/privacy.html",
+            termsOfService: "https://resources.gaia.cc/html/terms.html",
         }).build()}
         </div>
         <script src="https://kit.fontawesome.com/79ded072f6.js" crossorigin="anonymous"></script>
