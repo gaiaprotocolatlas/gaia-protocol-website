@@ -1209,8 +1209,18 @@ a.tab.gaia-component.selected {
   font-size: 32px;
   font-weight: bold;
 }
+@media only screen and (max-width: 859px) {
+  .intro-view > section > main > h2 {
+    font-size: 20px;
+  }
+}
 .intro-view > section > main > p {
   margin-top: 8px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > section > main > p {
+    font-size: 14px;
+  }
 }
 .intro-view > section > main > .cards {
   margin-top: 32px;
@@ -1229,9 +1239,20 @@ a.tab.gaia-component.selected {
   align-items: center;
   gap: 16px;
 }
+@media only screen and (max-width: 859px) {
+  .intro-view > section > main > .cards > .card {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .intro-view > section > main > .cards > .card > img {
   width: 140px;
   border-radius: 4px;
+}
+@media only screen and (max-width: 859px) {
+  .intro-view > section > main > .cards > .card > img {
+    width: 60px;
+  }
 }
 .intro-view > section > main > .cards > .card > main > h3 {
   font-size: 20px;

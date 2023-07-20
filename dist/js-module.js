@@ -3,9 +3,15 @@ ThemeManager.init();
 const topBar = document.querySelector(".topbar");
 if (topBar) {
     const menuPanel = topBar.querySelector(".menu-panel");
+    const menuContainer = menuPanel?.querySelector(".menu-container");
     if (menuPanel) {
         document.querySelector(".topbar .menu-button")?.addEventListener("click", () => menuPanel.classList.add("active"));
         menuPanel.querySelector(".close-menu-button")?.addEventListener("click", () => menuPanel.classList.remove("active"));
+        menuPanel.addEventListener("click", (event) => {
+            if (menuContainer?.contains(event.target) !== true) {
+                menuPanel.classList.remove("active");
+            }
+        });
     }
     const themeSelect = new Select({
         defaultValue: ThemeManager.theme,
@@ -23,6 +29,6 @@ if (topBar) {
     themeSelect.on("select", (value) => {
         ThemeManager.theme = value;
     });
-    menuPanel?.querySelector(".menu-container footer")?.append(themeSelect.domElement);
+    menuContainer?.querySelector("footer")?.append(themeSelect.domElement);
 }
 //# sourceMappingURL=js-module.js.map

@@ -6,9 +6,15 @@ const topBar = document.querySelector(".topbar");
 if (topBar) {
 
     const menuPanel = topBar.querySelector(".menu-panel");
+    const menuContainer = menuPanel?.querySelector(".menu-container");
     if (menuPanel) {
         document.querySelector(".topbar .menu-button")?.addEventListener("click", () => menuPanel.classList.add("active"));
         menuPanel.querySelector(".close-menu-button")?.addEventListener("click", () => menuPanel.classList.remove("active"));
+        menuPanel.addEventListener("click", (event) => {
+            if (menuContainer?.contains(event.target as any) !== true) {
+                menuPanel.classList.remove("active");
+            }
+        });
     }
 
     const themeSelect = new Select({
@@ -29,5 +35,5 @@ if (topBar) {
         ThemeManager.theme = value;
     });
 
-    menuPanel?.querySelector(".menu-container footer")?.append(themeSelect.domElement);
+    menuContainer?.querySelector("footer")?.append(themeSelect.domElement);
 }

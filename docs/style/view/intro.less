@@ -73,10 +73,18 @@
             >h2 {
                 font-size  : 32px;
                 font-weight: bold;
+
+                @media @phone {
+                    font-size: 20px;
+                }
             }
 
             >p {
                 margin-top: 8px;
+
+                @media @phone {
+                    font-size: 14px;
+                }
             }
 
             >.cards {
@@ -95,9 +103,18 @@
                     align-items: center;
                     gap        : 16px;
 
+                    @media @phone {
+                        flex-direction: column;
+                        align-items   : start;
+                    }
+
                     >img {
                         width        : 140px;
                         border-radius: 4px;
+
+                        @media @phone {
+                            width: 60px;
+                        }
                     }
 
                     >main {
