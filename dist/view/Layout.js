@@ -35,6 +35,9 @@ export default class Layout {
                 }, {
                     name: "Story",
                     uri: "/story",
+                }, {
+                    name: "Docs",
+                    href: "https://docs.gaia.cc/",
                 }] : [{
                     name: "뉴스",
                     uri: "/ko/news",
@@ -44,6 +47,9 @@ export default class Layout {
                 }, {
                     name: "스토리",
                     uri: "/ko/story",
+                }, {
+                    name: "문서",
+                    href: "https://docs.gaia.cc/ko",
                 }],
         }, this.lang === "en" ? el("a.select-lang-button", el("i.fa-solid.fa-globe"), " KO", {
             href: "/ko",
