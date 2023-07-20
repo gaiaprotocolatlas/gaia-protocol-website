@@ -1501,6 +1501,12 @@ footer.gaia-component {
 footer.gaia-component > .contact {
   display: flex;
 }
+@media only screen and (max-width: 859px) {
+  footer.gaia-component > .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer.gaia-component > .contact > a {
   flex-grow: 1;
 }
@@ -1511,6 +1517,7 @@ footer.gaia-component > .contact > .social {
 }
 @media only screen and (max-width: 859px) {
   footer.gaia-component > .contact > .social {
+    margin-top: 16px;
     gap: 8px;
   }
 }
@@ -1537,6 +1544,12 @@ footer.gaia-component > .bottom {
   display: flex;
   gap: 16px;
   font-size: 14px;
+}
+@media only screen and (max-width: 859px) {
+  footer.gaia-component > .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 footer.gaia-component > .bottom > .copy-right {
   flex-grow: 1;
