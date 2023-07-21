@@ -8,19 +8,19 @@ export default class Intro extends DomNode {
         }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia Protocol Gods"), el("p", msg("intro-view-gaia-protocol-gods-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://docs.gaia.cc/gaia-protocol-gods",
             target: "_blank",
-        })))))), el("section.technologies", el("main", el("h2", msg("intro-view-tech-title", lang)), el("p", msg("intro-view-tech-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia Accoounts"), el("p", msg("intro-view-gaia-accounts-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        })))))), el("section.technologies", el("main", el("h2", msg("intro-view-tech-title", lang)), el("p", msg("intro-view-tech-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gaia-accounts-logo.jpg" }), el("main", el("h3", "Gaia Accounts"), el("p", msg("intro-view-gaia-accounts-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://docs.gaia.cc/gaia-accounts",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Trinity"), el("p", msg("intro-view-trinity-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/trinity-logo.jpg" }), el("main", el("h3", "Trinity"), el("p", msg("intro-view-trinity-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://docs.gaia.cc/trinity",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia Chain"), el("p", msg("intro-view-gaia-chain-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/gaia-chain-logo.jpg" }), el("main", el("h3", "Gaia Chain"), el("p", msg("intro-view-gaia-chain-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://gaiachain.org",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia Chat Bridge"), el("p", msg("intro-view-gaia-chat-bridge-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/gaia-chat-bridge-logo.jpg" }), el("main", el("h3", "Gaia Chat Bridge"), el("p", msg("intro-view-gaia-chat-bridge-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://docs.gaia.cc/gaia-chat-bridge",
             target: "_blank",
-        }))), new Card({}, el("img", { src: "/images/logos/gods-logo.jpg" }), el("main", el("h3", "Gaia CMP"), el("p", msg("intro-view-gaia-cmp-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
+        }))), new Card({}, el("img", { src: "/images/logos/gaia-cmp-logo.jpg" }), el("main", el("h3", "Gaia CMP"), el("p", msg("intro-view-gaia-cmp-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
             href: "https://cmp.gaia.cc",
             target: "_blank",
         })))))), el("section.services", el("main", el("h2", msg("intro-view-service-title", lang)), el("p", msg("intro-view-service-description", lang)), el(".cards", new Card({}, el("img", { src: "/images/logos/gaia-dex-logo.jpg" }), el("main", el("h3", "Gaia DEX"), el("p", msg("intro-view-gaia-dex-description", lang)), el("a", msg("learn-more-button", lang), el("i.fa-solid.fa-chevron-right"), {
