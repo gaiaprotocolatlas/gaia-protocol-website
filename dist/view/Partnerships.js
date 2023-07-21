@@ -1,7 +1,4 @@
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime.js";
 import { Card, DomNode, el } from "gaia-commons-ts";
-dayjs.extend(relativeTime);
 export default class Partnerships extends DomNode {
     partners = [{
             name: "Bifrost Network",

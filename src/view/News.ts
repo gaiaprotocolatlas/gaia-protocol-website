@@ -1,10 +1,7 @@
 import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime.js";
 import { DbData } from "gaia-commons-nodejs";
 import { Card, DomNode, el } from "gaia-commons-ts";
 import Notice from "../datamodel/Notice.js";
-
-dayjs.extend(relativeTime);
 
 export default class News extends DomNode {
 
@@ -23,10 +20,10 @@ export default class News extends DomNode {
                     el("a",
                         el("img", { src: "/images/news.jpg" }),
                         el("main",
-                            el(".time", dayjs(notice.createTime).fromNow()),
+                            el(".time", dayjs(notice.createTime).format(lang === "ko" ? "YYYY-MM-DD" : "DD/MM/YYYY")),
                             el("h2", notice.title),
                         ),
-                        { href: `/notice/${notice.id}` },
+                        { href: lang === "ko" ? `/ko/notice/${notice.id}` : `/notice/${notice.id}` },
                     ),
                 ),
             );
