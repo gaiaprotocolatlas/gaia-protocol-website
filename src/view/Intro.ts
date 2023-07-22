@@ -28,7 +28,9 @@ export default class Intro extends DomNode {
                                     msg("learn-more-button", lang),
                                     el("i.fa-solid.fa-chevron-right"),
                                     {
-                                        href: "https://docs.gaia.cc/gaiatoken",
+                                        href: lang === "ko" ?
+                                            "https://docs.gaia.cc/ko/assets/gaiatoken" :
+                                            "https://docs.gaia.cc/assets/gaiatoken",
                                         target: "_blank",
                                     },
                                 ),
@@ -43,7 +45,9 @@ export default class Intro extends DomNode {
                                     msg("learn-more-button", lang),
                                     el("i.fa-solid.fa-chevron-right"),
                                     {
-                                        href: "https://docs.gaia.cc/gaia-protocol-gods",
+                                        href: lang === "ko" ?
+                                            "https://docs.gaia.cc/ko/assets/gaia-protocol-gods" :
+                                            "https://docs.gaia.cc/assets/gaia-protocol-gods",
                                         target: "_blank",
                                     },
                                 ),
@@ -66,7 +70,9 @@ export default class Intro extends DomNode {
                                     msg("learn-more-button", lang),
                                     el("i.fa-solid.fa-chevron-right"),
                                     {
-                                        href: "https://docs.gaia.cc/gaia-accounts",
+                                        href: lang === "ko" ?
+                                            "https://docs.gaia.cc/ko/technologies/gaia-accounts" :
+                                            "https://docs.gaia.cc/technologies/gaia-accounts",
                                         target: "_blank",
                                     },
                                 ),
@@ -81,7 +87,9 @@ export default class Intro extends DomNode {
                                     msg("learn-more-button", lang),
                                     el("i.fa-solid.fa-chevron-right"),
                                     {
-                                        href: "https://docs.gaia.cc/trinity",
+                                        href: lang === "ko" ?
+                                            "https://docs.gaia.cc/ko/technologies/trinity" :
+                                            "https://docs.gaia.cc/technologies/trinity",
                                         target: "_blank",
                                     },
                                 ),
@@ -111,7 +119,9 @@ export default class Intro extends DomNode {
                                     msg("learn-more-button", lang),
                                     el("i.fa-solid.fa-chevron-right"),
                                     {
-                                        href: "https://docs.gaia.cc/gaia-chat-bridge",
+                                        href: lang === "ko" ?
+                                            "https://docs.gaia.cc/ko/technologies/gaia-chat-bridge" :
+                                            "https://docs.gaia.cc/technologies/gaia-chat-bridge",
                                         target: "_blank",
                                     },
                                 ),
